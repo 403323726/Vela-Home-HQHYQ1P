@@ -1,5 +1,7 @@
 # Vela Home for HaQu Q1 Pro
 
+[![GitHub release](https://img.shields.io/github/v/release/403323726/Vela-Home-HQHYQ1P?display_name=tag&sort=semver)](https://github.com/403323726/Vela-Home-HQHYQ1P/releases/latest)
+
 [简体中文](README.md) | **English**
 
 ![Vela Home icon](assets/branding/vela-home-icon-512.png)
