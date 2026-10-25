@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF0B0F13"
+    android:paddingStart="64dp"
+    android:paddingEnd="64dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="28dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hidden_apps_title"
+            android:textColor="#FFFFFFFF"
+            android:textSize="32sp"
+            android:fontFamily="@string/font_medium" />
+
+        <TextView
+            android:id="@+id/hiddenAppsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFB9E7C7"
+            android:textSize="16sp"
+            android:fontFamily="@string/font_medium" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/hidden_apps_activity_hint"
+        android:textColor="#FFAAB5BE"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/settings_panel_bg"
+        android:padding="14dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hiddenAppsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="4dp"
+            android:paddingBottom="18dp"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/hiddenAppsEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="@string/library_empty"
+            android:textColor="#FFAAB5BE"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/hidden_apps_safety_hint"
+        android:textColor="#FF8F9BA4"
+        android:textSize="14sp" />
+</LinearLayout>
